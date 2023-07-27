@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    home
+{% endblock title %}
+
+{% block  content%}
+    <h2 class="home_h2">投稿一覧</h2>
+    {% for i in rows %}
+        <div ="list_flame">
+            <li class="tr_list">{{ i [0]}}   　  {{ i [1]}}</li>
+        </div>
+    {% endfor %}
+
+    <a class="post_a" href = "{{url_for('home')}}">戻る</a>
+{% endblock %}

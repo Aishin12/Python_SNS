@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    投稿フォーム
+{% endblock title %}
+
+{% block  content%}
+    {% if error != null %}
+    <p style="color:red">{{error}}</p>
+    {% endif %}
+    <form class ="post_form" action="{{url_for("post_exe")}}" method="post">
+        <textarea class="post-textbox" type = "text" minlength="1" name ="post_text" placeholder="　　　　　　　　　　　　　　　　　　　気になったことをぼやく"></textarea><br> 
+        <button class="submit_post" type="submit">投稿</button>
+    </form>
+    <a class="post_a" href="{{url_for('home')}}">戻る</a>
+{% endblock %}

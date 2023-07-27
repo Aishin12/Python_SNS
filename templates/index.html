@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="{{url_for('static', filename='favicon/top.ico')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div id="home">
+    <h1 class="top_head">ようこそぼやきの泉へ</h1>
+    {% if error != null %}
+    <p style="color:red">{{error}}</p>
+    {% endif %}
+    {% if msg != null %}
+    <p style="color:blue">{{msg}}</p>
+    {% endif %}
+        
+        <form class="index_form" action="{{url_for('login')}}" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">メールアドレス</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" value="{{deta.email if date is defined else ''}}">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password"value="{{deta.password if date is defined else ''}}" >
+            </div>
+            <button type="submit" class="btn btn-primary">ログイン</button>
+        </form>
+
+    
+        <a class="index_a" href="{{url_for('register_form')}}">新規登録の方はこちらから</a> 
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    アカウント情報の編集
+{% endblock title %}
+
+{% block  content%}
+
+    {% if error != null %}
+    <p style="color:red">{{error}}</p>
+    {% endif %}
+    <h1 class="register_user_h1">アカウント編集</h1>
+    <form class="form_registeruser" action="{{url_for('account_edit_confirm')}}" method="post">
+        ユーザーネーム:     <input class="r_form_text_1" type="text" name="user_name" value={{session.user[1]}}><br>
+        生年月日：<input class="r_form_5" type="date" name="birth" value={{session.user[2]}}><br>
+        電話番号：<input class="r_form_text_2" type="text" name="tel_number" value={{session.user[3]}}><br>
+        メールアドレス：<input  class="r_form_text_3"  type="email" name="email" value={{session.user[4]}}><br>
+        <button class="r_form_submit" type="submit">次へ</button>
+    </form>
+    <a class="r_form_a"  href = "{{url_for('home')}}">戻る</a>
+
+{% endblock  %}

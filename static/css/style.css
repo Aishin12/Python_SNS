@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#home {
+    background-image: url(../images/paint_00024.jpg);
+    min-height: 100vh;
+}
+
+.index_form {
+    width: 500px;
+    height: 250px;
+    margin-left: 375px;
+    margin-top: 75px;
+}
+
+.index_a {
+    margin-left: 375px;
+    font-size: 120%;
+    text-decoration: none;
+    color: orange;
+}
+
+.register_user_h1 {
+    padding: 50px;
+    margin-left: 330px;
+}
+
+.form_registeruser {
+    border-style: solid;
+    border-width: 5px;
+    width: 500px;
+    height: 300px;
+    margin-top: 25px;
+    margin-left: 375px;
+    font-size: 120%;
+}
+
+.r_form_text_1 {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 280px;
+}
+
+.r_form_text_2 {
+    margin-top: 10px;
+    margin-left: 88px;
+    width: 250px;
+}
+
+.r_form_text_3 {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+}
+
+.r_form {
+    margin-top: 10px;
+    margin-left: 88px;
+}
+
+.r_form_text {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.r_form_submit {
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: orange;
+    color: aliceblue;
+}
+
+.r_form_a {
+    margin-top: 30px;
+    margin-left: 585px;
+}
+
+.conf_h1 {
+    padding-top: 25px;
+    margin-left: 375px;
+}
+
+.conf_table {
+    width: 500px;
+    height: 300px;
+    border-style: solid;
+    border-width: 4px;
+    margin-left: 375px;
+}
+
+.th_text {
+    font-size: 120%;
+    padding-right: 50px;
+}
+
+.td_text {
+    font-size: 150%;
+}
+
+.conf_a {
+    font-size: 150%;
+    margin-top: 50px;
+    margin-left: 485px;
+    text-decoration: none;
+}
+
+.conf_b {
+    font-size: 150%;
+    margin-top: 120px;
+    margin-left: 150px;
+    text-decoration: none;
+}
+
+.comp_h1 {
+    padding-top: 150px;
+    margin-left: 500px;
+    margin-bottom: 10px;
+}
+
+.comp_a {
+    font-size: 150%;
+    margin-top: 150px;
+    margin-left: 570px;
+    text-decoration: none;
+}
+
+.post_form {
+    padding-top: 100px;
+    margin-left: 230px;
+    width: 1200px;
+    height: 400px;
+}
+
+.post-textbox {
+    width: 800px;
+    height: 200px;
+}
+
+.post_a {
+    font-size: 150%;
+    margin-top: 120px;
+    margin-left: 585px;
+    text-decoration: none;
+}
+
+.submit_post {
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
+.home_h2 {
+    width: 800px;
+    height: 100px;
+    padding-top: 25px;
+    margin-left: 50px;
+}
+
+.home_a {
+    width: 800px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 85px;
+    margin-bottom: 50px;
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.home_b {
+    width: 800px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 85px;
+    margin-bottom: 50px;
+    font-size: 150%;
+    text-decoration: none;
+    color: rgb(235, 87, 81);
+    font-weight: 800;
+}
+
+.tr_list {
+    width: 1050px;
+    font-size: 120%;
+    margin-left: 100px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.drop_form {
+    margin-right: 50px;
+    margin-left: 1102px
+}
+
+.r_form_5 {
+    margin-top: 10px;
+    margin-left: 53px;
+}
+
+.r_form_text_2 {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 250px;
+}
+
+.search_result {
+    font-size: 130%;
+    margin-left: 100px;
+    margin-bottom: 25px;
+
+}

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    プロフィール
+{% endblock title %}
+
+{% block  content%}
+    <h1 class="home_h2">私の投稿</h1>
+    {% if error != null %}
+        <p style="color:red">{{error}}</p>
+    {% endif %}
+
+        {% for i in rows %}
+            <div ="list_flame">
+                <li class="tr_list">{{ i [0]}} {{ i [1]}}</li>
+            </div>
+            <form class="drop_form" action="{{url_for('account_drop_post')}}" method="post">
+                <input type="hidden" name="post_id" value="{{i[2]}}">
+                <button type="submit">削除</button>
+            </form>
+        {% endfor %}
+    </table>
+    <a class="post_a" href="{{url_for('home')}}">戻る</a>
+{% endblock  %}

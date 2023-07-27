@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='favicon/top.ico')}}">
+    <title>登録確認</title>
+</head>
+<body>
+    <div id="home">
+        <h1 class="conf_h1">登録情報の確認</h1>
+        <table class="conf_table">
+                <tr class="r_conf_tr"><th class="th_text">ユーザーネーム</th><td class="td_text">{{session.user_list[0] }}</td><tr>
+                <tr class="r_conf_tr"><th class="th_text">生年月日</th><td td class="td_text">{{session.user_list[1] }}</td><tr>                
+                <tr class="r_conf_tr"><th class="th_text">電話番号</th><td td class="td_text">{{session.user_list[2] }}</td><tr>
+                <tr class="r_conf_tr"><th class="th_text">メールアドレス</th><td td class="td_text">{{session.user_list[3] }}</td><tr>
+                <tr class="r_conf_tr"><th class="th_text">パスワード</th><td td class="td_text">*******</td><tr>
+                </tr>
+        </table>
+        <a class="conf_a" href="{{url_for('register_exe')}}">登録</a>
+        <a class="conf_b" href="../">戻る</a>
+    </div>
+</body>
+</html>

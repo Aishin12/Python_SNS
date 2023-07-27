@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    検索結果
+{% endblock title %}
+
+{% block  content%}
+    <h1 class="home_h2">検索結果</h1>
+        {% for i in rows %}
+            <div class="search_result"> {{i[0]}}</div>
+        {% endfor %}
+    <a class="post_a"  href = "{{url_for('home')}}">戻る</a>
+{% endblock %}

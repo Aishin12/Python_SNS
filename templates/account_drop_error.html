@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    error
+{% endblock title %}
+
+{% block  content%}
+    <h1 style="color:red">削除に失敗しました。再度お試しください。</h1>
+    <a href="{{url_for('home')}}">戻る</a>
+{% endblock %}
